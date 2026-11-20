@@ -1,0 +1,11 @@
+{
+  "name": "dsh-empty-prompt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "允许空提示词直接发送：触发一个没有任何 user message 的回合（turn/start + turn/end，不写 user input、不调模型）。配套 Client patch 把空内容发送/回车接到 POST /empty-prompt；Trajectory 对空回合正常显示。",
+  "exports": { ".": "./index.js" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

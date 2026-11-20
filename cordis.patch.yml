@@ -1,0 +1,3 @@
+- insert:
+    - id: empty-prompt
+      name: 'dsh-empty-prompt'
